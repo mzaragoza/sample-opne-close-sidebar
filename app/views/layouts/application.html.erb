@@ -9,6 +9,17 @@
   </head>
 
   <body>
+    <div id="mySidenav" class="sidenav">
+      <%= link_to 'X', 'javascript:void(0)', class: 'closebtn', onclick: "closeNav()" %>
+      <%= link_to 'Page 1', '#' %>
+      <%= link_to 'Page 2', '#' %>
+      <%= link_to 'Page 3', '#' %>
+      <%= link_to 'Page 4', '#' %>
+    </div>
+
+    <h2>Animated Sidenav Example</h2>
+    <p>Click on the element below to open the side navigation menu.</p>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
     <%= yield %>
   </body>
 </html>
